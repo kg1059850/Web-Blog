@@ -1,0 +1,357 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8"
+        <meta name="viewport" consent="width=device-width, initial-scale=1.0">
+        <title>NASCAR Blog</title>
+        <style>
+            body {background-color: gold; font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;}
+            h1   {color: #080808; text-shadow: 2px 4px #FC1010; font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;}
+            .button {
+                background-color: #fc1010;
+                border: none;
+                color: #080808;
+                padding: 10px 15px;
+                text-align: center;
+                text-decoration: none;
+                display: inline-block;
+                font-size: 16px;
+                margin: 4px 2px;
+                cursor: pointer;
+}
+.navbar{
+    background-color: #080808 ;
+    display: flex; justify-content: space-around;
+  margin: 30px;
+  padding: 30px;
+  font-size: 30px;
+
+}
+blockquote{
+    border: 2px solid; color: #fc1010;
+}
+img{
+    border-radius: 75%;
+        border: 3px solid #fc1010;
+        background: #080808;
+        margin: auto;
+        padding: 15px 10px;
+        box-shadow: 10px 10px grey;
+}
+.grid-container{
+  display: grid; grid-template-rows: 150px auto auto auto; grid-template-columns: auto auto auto;
+}
+.logo{
+    display: flex; align-items:center;
+  grid-column-start: 1;
+  grid-column-end: 1;
+  grid-row-start: 1;
+  
+}
+.header{
+    display: flex; align-items:center;
+  grid-column-start: 2;
+  grid-column-end: 4;
+  grid-row-start: 1;
+}
+.background{
+    display: flex; align-items:flex-start;
+  grid-column-start: 1;
+  grid-column-end:1 ;
+  grid-row-start: 2;
+}
+.background2{
+    display: flex; align-items:flex-start;
+  grid-column-start: 2;
+  grid-column-end: 2;
+  grid-row-start: 2;
+}
+.background3{
+    display: flex; align-items:flex-start;
+  grid-column-start: 3;
+  grid-column-end: 3;
+  grid-row-start: 2;
+}
+.roundof16{
+    display: flex; align-items: flex-start;
+  grid-column-start: 1;
+  grid-column-end: 1;
+  grid-row-start: 3;
+}
+.roundof16dets{
+    display: flex; align-items:flex-end;
+  grid-column-start: 1;
+  grid-column-end: 2;
+  grid-row-start: 3;
+}
+.roundof12{
+        display: flex; align-items: flex-start;
+  grid-column-start: 2;
+  grid-column-end: 2;
+  grid-row-start: 3;
+}
+.roundof12dets{
+  display: flex; align-items:flex-end;
+  grid-column-start: 2;
+  grid-column-end: 2;
+  grid-row-start: 3;
+}
+.roundof8{
+        display: flex; align-items: flex-start;
+  grid-column-start: 3;
+  grid-column-end: 3;
+  grid-row-start: 3;
+}
+.roundof8dets{
+  display: flex; align-items:flex-end;
+  grid-column-start: 3;
+  grid-column-end: 3;
+  grid-row-start: 3;
+}
+.footer{
+    display: grid; align-items: flex-end;
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row: 4;
+}
+            </style>
+        </head>
+<body>
+    <div class="grid-container">
+        <div class="logo">
+    <h1><center>Nascar Blog</center></h1>
+    </div>
+    <div class="header">
+    <header>
+        <nav class="navbar"><center>
+            <button>
+            <a href="index.html" class="button">Home</a>
+            </button>
+            <button>
+            <a href="posts.html" class="button">Timeline Posts</a>
+            </button>
+            
+            <button>
+            <a href="about.html" class="button">About</a>
+            </button></center>
+        </nav>
+    </div>
+    </header>
+        <div class="background">
+    <article>
+        <center> <b>National Association for Stock Car Auto Racing, better known as NASCAR
+            is a sport that is for the most talented of racecar drivers. Stock car racing began in 
+            the 1920s and 1930s with a Daytona Beach road course, that is where the sport 
+            began and is evoloving till this day. This is a blog that is meant to keep the reader up to 
+            date on the latest news and prespective of what is occuring in the NASCAR world. </b></center>
+    </article>
+    </div>
+    <div class="background2">
+    <section>
+    <Blockquote cite="https://nascar101.nascar.com/about-nascar/"><b>
+        In a historic shift for the sport, beginning in 2020 NASCAR’s premier series became known as the NASCAR Cup Series and featured four cornerstone brands as
+         Premier Partners: Busch Beer, Coca-Cola®, GEICO and Xfinity. All four partners are prominently featured in multiple platforms across the sport, including
+         integrations in broadcast, NASCAR digital and social channels, event entitlements, in-market promotions and at-track activations.
+    </b>
+        </Blockquote>
+        </section>
+            </div>
+            <div class="roundof16">
+        <h2><center>2022 Top 16 Drivers</center></h2>
+            
+            </div>
+            <div class="roundof16dets">
+    <details>
+        <summary>The Top 16 Drivers</summary>
+    
+    <figure float="Left"><img src="/Images/william byron.jpg" alt="William Byron" width="215px" height="150px">
+    <figcaption> William Byron #24, Hendrick Motorsports</figcaption>
+    </figure>
+    <figure align="center">
+    <img src="/Images/Tyler Reddick.jpg" alt="Tyler Reddick" width="215px" height="150px">
+    <figcaption > Tyler Reddick #8, Richard Childress Racing</figcaption>
+    </figure>
+    <figure float="right">
+    <img src="/Images/Daniel Suarez.jpg" alt="Daniel Suarez" width="215px" height="150px">
+    <figcaption> Daniel Suarez #99, Trackhouse Racing Team</figcaption>
+    </figure>
+    <figure align="center">
+    <img src="/Images/Denny Hamlin.jpg" alt="Denny Hamlin" width="215px" height="150px">
+    <figcaption> Denny Hamlin #11, Joe Gibbs Racing</figcaption>
+    </figure>
+    <figure float="Left">
+    <img src="/Images/Joey Logano.jpg" alt="Joey Logano" width="215px" height="150px">
+    <figcaption> Joey Logano #22, Team Penske</figcaption>
+    </figure>
+    <figure align="center">
+    <img src="/Images/Ross Chastain.jpg" alt="Ross Chastain" width="215px" height="150px">
+    <figcaption> Ross Chastain #1, Trackhouse Race Team</figcaption>
+    </figure>
+    <figure float="right">
+    <img src="/Images/Chase Briscoe.jpg" alt="Chase Briscoe" width="215px" height="150px">
+    <figcaption> Chase Briscoe #14, Stewart-Haas Racing</figcaption>
+    </figure>
+    <figure align="center">
+    <img src="/Images/Ryan Blaney.jpg" alt="Ryan Blaney" width="215px" height="150px">
+    <figcaption> Ryan Blaney #12, Team Penske</figcaption>    
+    </figure>   
+    <figure float="left">
+    <img src="/Images/Austin Dillon.jpg" alt="Austin Dillon" width="215px" height="150px">
+    <figcaption> Austin Dillon #3, Richard Childress Racing</figcaption>
+   </figure>
+    <figure align="center">
+      <img src="/Images/Kyle Busch.jpg" alt="Kyle Busch" width="215px" height="150px">
+      <figcaption> Kyle Busch #18, Joe Gibbs Racing</figcaption>
+      </figure>
+      <figure float="right">
+    <img src="/Images/Kyle Larson.jpg" alt="Kyle Larson" width="215px" height="150px">
+    <figcaption> Kyle Larson #5, Hendrick Motorsports</figcaption>
+    </figure>
+    <figure align="center">
+    <img src="/Images/Alex Bowman.jpg" alt="Alex Bowman" width="215px" height="150px">
+    <figcaption> Alex Bowman #48, Hendrick Motorsports</figcaption>
+    </figure>
+    <figure float="left">
+    <img src="/Images/chase elliott.jpg" alt="Chase Elliott" width="215px" height="150px">
+    <figcaption> Chase Elliott #9, Hendrick Motorsports</figcaption>
+    </figure>
+    <figure align="center">
+    <img src="/Images/Christopher Bell.jpg" alt="Christopher Bell" width="215px" height="150px">
+    <figcaption> Christopher Bell #20, Joe Gibbs Racing</figcaption>
+    </figure>
+    <figure float="right">
+    <img src="/Images/Kevin Harvick.jpg" alt="Kevin Harvick" width="215px" height="150px">
+    <figcaption> Kevin Harvick #4, Stewart-Haas Racing</figcaption>
+    </figure>
+    <figure align="center">
+    <img src="/Images/Austin Cindric.jpg" alt="Austin Cindric" width="215px" height="150px">
+    <figcaption> Austin Cindric #2, Team Penske</figcaption>
+    </figure>
+   </details>
+    </div>
+
+
+   <div class="roundof12">
+        <article>
+            <h2><center>2022 Top 12 Drivers</center></h2>
+               </article>
+    </div>
+    <div class="roundof12dets">
+    <details>
+        <summary>The Top 12 Drivers</summary>
+    
+    <figure float="left"><img src="/Images/william byron.jpg" alt="William Byron" width="215px" height="150px">
+    <figcaption> William Byron #24, Hendrick Motorsports</figcaption>
+    </figure>
+   
+    <figure align="center">
+    <img src="/Images/Daniel Suarez.jpg" alt="Daniel Suarez" width="215px" height="150px">
+    <figcaption> Daniel Suarez #99, Trackhouse Racing Team</figcaption>
+    </figure>
+    <figure float="right">
+    <img src="/Images/Denny Hamlin.jpg" alt="Denny Hamlin" width="215px" height="150px">
+    <figcaption> Denny Hamlin #11, Joe Gibbs Racing</figcaption>
+    </figure>
+    <figure align="center">
+    <img src="/Images/Joey Logano.jpg" alt="Joey Logano" width="215px" height="150px">
+    <figcaption> Joey Logano #22, Team Penske</figcaption>
+    </figure>
+    <figure float="left">
+    <img src="/Images/Ross Chastain.jpg" alt="Ross Chastain" width="215px" height="150px">
+    <figcaption> Ross Chastain #1, Trackhouse Race Team</figcaption>
+    </figure>
+    <figure align="center">
+    <img src="/Images/Chase Briscoe.jpg" alt="Chase Briscoe" width="215px" height="150px">
+    <figcaption> Chase Briscoe #14, Stewart-Haas Racing</figcaption>
+    </figure>
+    <figure float="right">
+    <img src="/Images/Ryan Blaney.jpg" alt="Ryan Blaney" width="215px" height="150px">
+    <figcaption> Ryan Blaney #12, Team Penske</figcaption>    
+    </figure>   
+    <figure align="center">
+    <img src="/Images/Kyle Larson.jpg" alt="Kyle Larson" width="215px" height="150px">
+    <figcaption> Kyle Larson #5, Hendrick Motorsports</figcaption>
+    </figure>
+    <figure float="left">
+    <img src="/Images/Alex Bowman.jpg" alt="Alex Bowman" width="215px" height="150px">
+    <figcaption> Alex Bowman #48, Hendrick Motorsports</figcaption>
+    </figure>
+    <figure align="center">
+    <img src="/Images/chase elliott.jpg" alt="Chase Elliott" width="215px" height="150px">
+    <figcaption> Chase Elliott #9, Hendrick Motorsports</figcaption>
+    </figure>
+    <figure float="right">
+    <img src="/Images/Christopher Bell.jpg" alt="Christopher Bell" width="215px" height="150px">
+    <figcaption> Christopher Bell #20, Joe Gibbs Racing</figcaption>
+    </figure>
+    <figure align="center">
+    <img src="/Images/Austin Cindric.jpg" alt="Austin Cindric" width="215px" height="150px">
+    <figcaption> Austin Cindric #2, Team Penske</figcaption>
+    </figure>
+   </details>
+   </div>
+   <div class="roundof8"
+   <article>
+    <h2><center>2022 Top 8 Drivers</center></h2>
+    </article>
+    </div>
+    <div class="roundof8dets">
+   <details>
+    <summary>The Top 8 Drivers</summary>
+
+<figure float="left"><img src="/Images/william byron.jpg" alt="William Byron" width="215px" height="150px">
+<figcaption> William Byron #24, Hendrick Motorsports</figcaption>
+</figure>
+<figure align="center">
+<img src="/Images/Denny Hamlin.jpg" alt="Denny Hamlin" width="215px" height="150px">
+<figcaption> Denny Hamlin #11, Joe Gibbs Racing</figcaption>
+</figure>
+<figure float="right">
+<img src="/Images/Joey Logano.jpg" alt="Joey Logano" width="215px" height="150px">
+<figcaption> Joey Logano #22, Team Penske</figcaption>
+</figure>
+<figure align="center">
+<img src="/Images/Ross Chastain.jpg" alt="Ross Chastain" width="215px" height="150px">
+<figcaption> Ross Chastain #1, Trackhouse Race Team</figcaption>
+</figure>
+<figure flaot="left">
+<img src="/Images/Chase Briscoe.jpg" alt="Chase Briscoe" width="215px" height="150px">
+<figcaption> Chase Briscoe #14, Stewart-Haas Racing</figcaption>
+</figure>
+<figure align="center">
+<img src="/Images/Ryan Blaney.jpg" alt="Ryan Blaney" width="215px" height="150px">
+<figcaption> Ryan Blaney #12, Team Penske</figcaption>    
+</figure>  
+<figure float="right">
+<img src="/Images/chase elliott.jpg" alt="Chase Elliott" width="215px" height="150px">
+<figcaption> Chase Elliott #9, Hendrick Motorsports</figcaption>
+</figure>
+<figure align="center">
+<img src="/Images/Christopher Bell.jpg" alt="Christopher Bell" width="215px" height="150px">
+<figcaption> Christopher Bell #20, Joe Gibbs Racing</figcaption>
+</figure
+</details>
+</div>
+    <dav class="background3">
+   <main><center>
+    The NASCAR Cup series consists of 36 Charters. Charters are places that can be help by a 
+    team. The max number a drivers/numbers/cars that can be represented in a race is 4. For a 
+    long time the big teams such as, Team Penske, Joe-Gibbs Racing, and Hendrick Motorsports 
+    have been dominate, but this year 2022 may be the year of the small race teams.
+   </center></main>
+    </dav>
+
+</body>
+</div>
+
+<footer class="footer">
+    <center>
+    <nav class="nav">
+        <a href="index.html">Home</a>
+        <a href="posts.html">Timeline Posts</a>
+        
+        <a href="about.html">About</a>
+    </center>
+    </nav>
+</footer>
+</html>
