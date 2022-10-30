@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8"
+        <meta name="viewport" consent="width=device-width, initial-scale=1.0">
+    </head>  
+    <style>
+        body{
+            background-color: #4D148C;
+        }
+        h1   {color: #FF6200;
+     text-shadow: 2px 4px white;
+      font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+            width:100px;
+            height:100px;
+             animation-name: slide;
+            animation-duration: 5000ms;
+            animation-iteration-count: 5s;
+             animation-timing-function: relative;
+}
+@keyframes slide{
+    from {
+    margin-left: 100%;
+    width: 100%;
+  }
+
+  to {
+    margin-left: 0%;
+    width: 0%;
+  }
+    
+}
+.button {
+                transition: all 1s ease;
+                background-color: #FF6200;
+                border: none;
+                color: #4D148C;
+                padding: 10px 15px;
+                text-align: center;
+                text-decoration: none;
+                display: inline-block;
+                font-size: 16px;
+                margin: 4px 2px;
+                cursor: pointer;
+}
+.button:hover{
+  background-color: #8533dd;
+  color: #FF6200;
+  transform: translate(18px,-20px)
+}
+form {
+			background-color: #FF6200;
+			max-width: 500px;
+			margin: 50px auto;
+			padding: 30px 20px;
+		}
+ .subscriptions {
+	width: 59%;
+	display: block;
+	position: absolute;
+	top: 60px;
+	left: 15px;
+}
+
+.fields input {
+	width: 90%;
+	font-size: 17px;
+	padding: 10px;
+	border-radius: 4px;
+	border-width: 0px;
+	color: black;
+	font-family: 'Times New Roman', sans-serif;
+	font-weight: 500;
+	margin-bottom: 10px;
+}
+	    </style>
+    <body>
+        <div class="grid-container">
+            <div class="logo">
+        <h1><center>Newsletter Subscription</center></h1>
+        </div>
+        <div class="header">
+        <header>
+            <nav class="navbar"><center>
+                <button>
+                <a href="index.html" class="button">Home</a>
+                </button>
+                <button>
+                <a href="posts.html" class="button">Timeline Posts</a>
+                </button>
+                <button>
+                <a href="about.html" class="button">About</a>
+                </button>
+                <button>
+                <a href="donations.html" class="button">Donations</a> 
+                </button>
+                <button>
+                <a href="newsletter.html" class="button"> Newsletter</a>    
+                </button>
+                <button>
+                <a href="Membership.html" class="button"> Membership</a>    
+                </button>
+                </center>
+            </nav>
+        </div>
+        </header>
+        <body>
+            <p><b>Subscribe to our newsletter and recieve updates via email or Text message</b></p>
+            <form id="Subscription">
+                <div class="fields">
+                    Name<input type="text" id="firstname" placeholder="Please Enter Name"></input>
+                   Email Address<input type="text" id="email" placeholder="Enter Email Address"></input>
+                   Phone Number<input type="text" id="phonenumber" placeholder="Enter Phone Number"></input>
+                </div>
+                <div class="button" id="submitbutton">
+                    <button type="submit" value="submit">
+                        Submit
+                    </button>
+                    </div>
+        </body>
+</html>

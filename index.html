@@ -8,6 +8,7 @@
             body {background-color: gold; font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;}
             h1   {color: #080808; text-shadow: 2px 4px #FC1010; font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;}
             .button {
+                transition: all 1s ease;
                 background-color: #fc1010;
                 border: none;
                 color: #080808;
@@ -18,6 +19,11 @@
                 font-size: 16px;
                 margin: 4px 2px;
                 cursor: pointer;
+}
+.button:hover{
+  background-color: gold;
+  color: #FC1010;
+  transform: translate(18px,-20px)
 }
 .navbar{
     background-color: #080808 ;
@@ -37,6 +43,10 @@ img{
         margin: auto;
         padding: 15px 10px;
         box-shadow: 10px 10px grey;
+        
+}
+img:hover{
+  transform: translate(42px,18px);
 }
 .grid-container{
   display: grid; grid-template-rows: 150px auto auto auto; grid-template-columns: auto auto auto;
@@ -46,8 +56,23 @@ img{
   grid-column-start: 1;
   grid-column-end: 1;
   grid-row-start: 1;
-  
+  width:100px;
+  height:100px;
+  animation-name: spin;
+  animation-duration: 5000ms;
+  animation-iteration-count: 5s;
+  animation-timing-function: linear;
 }
+@keyframes spin{
+  from {
+        transform:rotate(0deg);
+    }
+    to {
+        transform:rotate(360deg);
+    }
+}
+  
+
 .header{
     display: flex; align-items:center;
   grid-column-start: 2;
@@ -133,7 +158,17 @@ img{
             
             <button>
             <a href="about.html" class="button">About</a>
-            </button></center>
+            </button>
+            <button>
+            <a href="donations.html" class="button">Donations</a> 
+            </button>
+            <button>
+            <a href="newsletter.html" class="button"> Newsletter</a>    
+            </button>
+            <button>
+            <a href="Membership.html" class="button"> Membership</a>    
+            </button>
+            </center>
         </nav>
     </div>
     </header>

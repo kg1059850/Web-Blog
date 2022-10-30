@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8"
+        <meta name="viewport" consent="width=device-width, initial-scale=1.0">
+    </head>  
+    <style>
+        body{
+            background-color: #dd80dd;
+        }
+         h1   {color: #800080;
+     text-shadow: 2px 4px #ffffff;
+      font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+            width:100px;
+            height:100px;
+             animation-name: slide;
+            animation-duration: 5000ms;
+            animation-iteration-count: 5s;
+             animation-timing-function: relative;
+}
+@keyframes slide{
+    from {
+    margin-left: 100%;
+    width: 100%;
+  }
+
+  to {
+    margin-left: 0%;
+    width: 0%;
+  }
+    
+}
+.button {
+            transition: all 1s ease;
+             background-color: #ffc0cc;
+            border: none;
+             color:#800080;
+             padding: 10px 15px;
+             text-align: center;
+             text-decoration: none;
+              display: inline-block;
+             font-size: 16px;
+              margin: 4px 2px;
+            cursor: pointer;
+}
+.button:hover{
+  background-color: #800080;
+  color: #ffc0cc;
+  transform: translate(18px,-20px)
+}
+	
+		form {
+			background-color: #ffc0cc;
+			max-width: 500px;
+			margin: 50px auto;
+			padding: 30px 20px;
+		}
+
+		
+		.control {
+			text-align: left;
+			margin-bottom: 25px;
+		}
+
+		
+		.control label {
+			display: block;
+			margin-bottom: 10px;
+		}
+
+		
+		.control input,
+		.control select,
+		.textarea {
+			border: 1px solid #777;
+			border-radius: 2px;
+			font-family: inherit;
+			padding: 10px;
+			display: block;
+			width: 95%;
+		}
+		.control input[type="radio"],
+		.control input[type="checkbox"] {
+			display: inline-block;
+			width: auto;
+		}
+    </style>
+    <body>
+        <div class="grid-container">
+            <div class="logo">
+        <h1><center>Membership</center></h1>
+        </div>
+        <div class="header">
+        <header>
+            <nav class="navbar"><center>
+                <button>
+                <a href="index.html" class="button">Home</a>
+                </button>
+                <button>
+                <a href="posts.html" class="button">Timeline Posts</a>
+                </button>
+                <button>
+                <a href="about.html" class="button">About</a>
+                </button>
+                <button>
+                <a href="donations.html" class="button">Donations</a> 
+                </button>
+                <button>
+                <a href="newsletter.html" class="button"> Newsletter</a>    
+                </button>
+                <button>
+                <a href="Membership.html" class="button"> Membership</a>    
+                </button>
+                </center>
+            </nav>
+        </div>
+        </header>
+    <body>
+        <hr>
+        <p> Become a member of the blog by filling out the questionnaire below.</p>
+        <form id="questionnaire">
+            <div class="control">
+                <label for="name" id="label-name">
+                    Name
+                </label>
+    
+                <input type="text"
+                    id="name"
+                    placeholder="Enter first and last name" />
+            </div>
+            <div class="control">
+                <label for="email" id="label-email">
+                    Email
+                </label>
+                <input type="email"
+                    id="email"
+                    placeholder="Enter your e-mail" />
+            </div>
+            <div class="control">
+                <label for="Birthday" id="DOB">
+                    Birthday
+                </label>
+    
+                <input type="text"
+                    id="DOB"
+                    placeholder="Enter your Birthday"/>
+            </div>
+            <div class="control">
+                <label>Favorite 2022 playoff Drivers
+                    <small>(Check all that apply)</small>
+                </label>
+        
+                <label for="WilliamB">
+                    <input type="checkbox"
+                        name="WB">William Byron</input></label>
+                <label for="AustinC">
+                    <input type="checkbox"
+                        name="AC">Austin Cindric</input></label>
+                <label for="ChristopherB">
+                    <input type="checkbox"
+                        name="CB">Christopher Bell</input></label>
+                <label for="DennyH">
+                    <input type="checkbox"
+                        name="DH">Denny Hamlin</input></label>           
+                <label for="ChaseE">
+                    <input type="checkbox"
+                        name="CE">Chase Elliott</input></label>
+                <label for="TylerR">
+                    <input type="checkbox"
+                        name="TR">Tyler Reddick</input></label>
+                <label for="KyleB">
+                    <input type="checkbox"
+                        name="KB">Kyle Busch</input></label>
+                <label for="KyleL">
+                    <input type="checkbox"
+                        name="KL">Kyle Larson</input></label>
+                <label for="RyanB">
+                    <input type="checkbox"
+                        name="RB">Ryan Blaney</input></label>
+                <label for="AustinD">
+                    <input type="checkbox"
+                        name="AD">Austin Dillon</input></label>
+                 <label for="DanielS">
+                    <input type="checkbox"
+                        name="DS">Daniel Suarez</input></label>
+                <label for="ChaseB">
+                    <input type="checkbox"
+                        name="CB">Chase Briscoe</input></label> 
+                <label for="KevinH">
+                     <input type="checkbox"
+                        name="KH">Kevin Harvick</input></label>
+                <label for="AlexB">
+                     <input type="checkbox"
+                        name="AB">Alex Bowman</input></label> 
+                <label for="RossC">
+                    <input type="checkbox"
+                        name="RC"> Ross Chastain</input></label> 
+                <label for="JoeyL">
+                    <input type="checkbox"
+                        name="JL">Joey Lagano</input></label>       
+            </div>
+    
+		</div>
+        <div class="control">
+			<label for="comment">
+				Any comments or suggestions
+			</label>
+
+			<textarea name="comment" id="comment"
+				placeholder="Enter your comment here">
+			</textarea>
+		</div>
+<div class="button" id="submitbutton">
+		<button type="submit" value="submit">
+			Submit
+        </button>
+        </div>
+	</form>
+
+    
+    
+    
+    </body>
+</html>     
